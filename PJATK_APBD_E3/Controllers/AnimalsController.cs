@@ -25,16 +25,16 @@ public class AnimalsController : ControllerBase
     }
     
     [HttpPost]
-    public IActionResult AddAnimal(Animal animal)
+    public IActionResult AddAnimal(AnimalPostDto animalPostDto)
     {
-        _animalsService.AddAnimal(animal);
+        _animalsService.AddAnimal(animalPostDto);
         return StatusCode((StatusCodes.Status201Created));
     }
     
     [HttpPut("{id:int}")]
     public IActionResult UpdateAnimal(int id, [FromBody] Animal animal)
     {
-        _animalsService.UpdateAnimal(animal);
+        _animalsService.UpdateAnimal(id, animal);
         return NoContent();
     }
     

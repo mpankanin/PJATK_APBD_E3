@@ -16,17 +16,23 @@ public class AnimalsService : IAnimalsService
     
     public IEnumerable<Animal> GetAnimals(string orderBy)
     {
-        IEnumerable<Animal> animals = _animalsRepository.GetAnimals(orderBy);
+        string orderByValidated = ValidateOrderBy(orderBy);
+        IEnumerable<Animal> animals = _animalsRepository.GetAnimals(orderByValidated);
         return animals;
     }
 
-    public void AddAnimal(Animal animal)
+    public void AddAnimal(AnimalPostDto animalPostDto)
     {
-        _animalsRepository.AddAnimal(animal);
+        _animalsRepository.AddAnimal(animalPostDto);
     }
 
-    public void UpdateAnimal(Animal animal)
+    public void UpdateAnimal(int id, Animal animal)
     {
+        if(!_animalsRepository.AnimalIdExists(id))
+        {
+            throw new ArgumentException("Animal with given id does not exist");
+        }
+        animal.Id = id;
         _animalsRepository.UpdateAnimal(animal);
     }
 
@@ -34,5 +40,20 @@ public class AnimalsService : IAnimalsService
     {
         _animalsRepository.DeleteAnimal(id);
     }
+    
+    private string ValidateOrderBy(string orderBy)
+    {
+        if(orderBy == null)
+        {
+            return "name";
+        }
+        if (orderBy != "name" && orderBy != "category" && orderBy != "description" && orderBy != "area")
+        {
+            throw new ArgumentException("Invalid orderBy parameter");
+        }
+        return orderBy;
+    }
+    
+    
     
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.pankanin\\RiderProjects\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj": {}
+    "C:\\Users\\panka\\Desktop\\IT-Projekty\\PJATK\\APBD\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.pankanin\\RiderProjects\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj": {
+    "C:\\Users\\panka\\Desktop\\IT-Projekty\\PJATK\\APBD\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.pankanin\\RiderProjects\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj",
+        "projectUniqueName": "C:\\Users\\panka\\Desktop\\IT-Projekty\\PJATK\\APBD\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj",
         "projectName": "PJATK_APBD_E3",
-        "projectPath": "C:\\Users\\m.pankanin\\RiderProjects\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj",
-        "packagesPath": "C:\\Users\\m.pankanin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.pankanin\\RiderProjects\\PJATK_APBD_E3\\PJATK_APBD_E3\\obj\\",
+        "projectPath": "C:\\Users\\panka\\Desktop\\IT-Projekty\\PJATK\\APBD\\PJATK_APBD_E3\\PJATK_APBD_E3\\PJATK_APBD_E3.csproj",
+        "packagesPath": "C:\\Users\\panka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\panka\\Desktop\\IT-Projekty\\PJATK\\APBD\\PJATK_APBD_E3\\PJATK_APBD_E3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\m.pankanin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\panka\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\m.pankanin\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\panka\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
